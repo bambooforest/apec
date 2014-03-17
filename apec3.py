@@ -1,8 +1,10 @@
-#!/usr/bin/python
+# APEC: A tool for automatic phonological analysis of field data
+# Steven Moran & Shauna Eggers
+# Proceedings of the 2006 E-MELD Workshop, Tools and Standards: the state of the art
+# June 20-22, East Lansing, MI
+# http://emeld.org/workshop/2006/proceedings.html
 
-# APEC - Automated Phonetic Environment Creator
-# S Moran & S Eggers
-# last updated for QuantHistLing 2011
+# last updated for QuantHistLing 2011-2013
 
 import sys
 import re
