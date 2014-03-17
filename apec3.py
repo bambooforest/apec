@@ -2,7 +2,7 @@
 
 # APEC - Automated Phonetic Environment Creator
 # S Moran & S Eggers
-# last updated for QuantHistLing
+# last updated for QuantHistLing 2011
 
 import sys
 import re
