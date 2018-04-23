@@ -66,7 +66,6 @@ class Main(object):
 
 		output = Output()
 
-
 		if self.options.min_pairs:
 			display = analysis.findMinPairs()		
 		elif self.options.environs:
@@ -216,14 +215,14 @@ class Input:
 			line = line.strip()
 			columns = line.split(",")
 			phone = columns[-1].strip() # take the IPA column 
-			print(phone)
+#			print(phone)
 			first = phone[0]
 			if not first in phone_table:
 				phone_table[first] = [phone]
 			else:
 				phone_table[first].append(phone)
 
-		print("pt", phone_table)
+		# print("pt", phone_table)
 		return phone_table
 
 
@@ -296,7 +295,7 @@ class Analysis:
 		self.contrastive_pairs = []
 		self.complementary_pairs = []
 		
-		phonelist = self.phonehash.keys()
+		phonelist = list(self.phonehash.keys())
 		for i in range(len(phonelist)):
 			phone1 = phonelist[i]
 			for j in range(i+1, len(phonelist)):
